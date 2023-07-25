@@ -28,7 +28,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0rej9ylb7f8p-artifactory-primary-0-snapshots</name>
+        <url>https://zhukangxin.jfrog.io/artifactory/test-libs-snapshot-local</url>
+    </snapshotRepository>
+    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
@@ -40,7 +46,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.3.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
