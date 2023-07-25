@@ -7,7 +7,6 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   GIT_TAG: ${{ github.sha }}
 
